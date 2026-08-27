@@ -16,7 +16,7 @@
 
 #[test_only]
 module stablecoin::roles_tests {
-    use sui::{
+    use haneul::{
         event,
         test_scenario::{Self, Scenario},
         test_utils::assert_eq,

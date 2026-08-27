@@ -15,8 +15,8 @@
 // limitations under the License.
 
 module stablecoin::roles {
-    use sui::bag::{Self, Bag};
-    use sui::event;
+    use haneul::bag::{Self, Bag};
+    use haneul::event;
     use sui_extensions::two_step_role::{Self, TwoStepRole};
 
     // === Structs ===

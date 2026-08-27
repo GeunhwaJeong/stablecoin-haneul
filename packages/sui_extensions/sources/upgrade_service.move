@@ -15,7 +15,7 @@
 // limitations under the License.
 
 module sui_extensions::upgrade_service {
-    use sui::{
+    use haneul::{
         address,
         dynamic_object_field as dof,
         event,

@@ -19,10 +19,10 @@ name = "usdc"
 edition = "2024.beta"
 license = "Apache 2.0"
 
-[dependencies.Sui]
-git = "https://github.com/MystenLabs/sui.git"
-subdir = "crates/sui-framework/packages/sui-framework"
-rev = "a4185da5659d8d299d34e1bb2515ff1f7e32a20a"
+[dependencies.Haneul]
+git = "https://github.com/GeunhwaJeong/haneul.git"
+subdir = "crates/haneul-framework/packages/haneul-framework"
+rev = "main"
 
 [dependencies.stablecoin]
 local = "../stablecoin"

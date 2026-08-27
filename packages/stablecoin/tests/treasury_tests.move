@@ -18,7 +18,7 @@
 module stablecoin::treasury_tests {
     use std::string;
     use std::ascii;
-    use sui::{
+    use haneul::{
         coin::{Self, Coin, CoinMetadata},
         deny_list::{Self, DenyList},
         event,

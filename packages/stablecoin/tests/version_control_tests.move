@@ -16,7 +16,7 @@
 
 #[test_only]
 module stablecoin::version_control_tests {
-    use sui::vec_set::{Self, VecSet};
+    use haneul::vec_set::{Self, VecSet};
     use stablecoin::version_control;
 
     #[test, expected_failure(abort_code = version_control::EIncompatibleVersion)]

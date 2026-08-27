@@ -18,7 +18,7 @@
 /// as intended when given an outdated Treasury object.
 #[test_only]
 module stablecoin::treasury_migration_tests {
-    use sui::{
+    use haneul::{
         coin,
         event,
         vec_set,

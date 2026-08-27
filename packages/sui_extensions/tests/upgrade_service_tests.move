@@ -16,7 +16,7 @@
 
 #[test_only]
 module sui_extensions::upgrade_service_tests {
-    use sui::{
+    use haneul::{
         event,
         package::{Self, UpgradeTicket, UpgradeReceipt, UpgradeCap},
         test_scenario::{Self, Scenario},
@@ -294,7 +294,7 @@ module sui_extensions::upgrade_service_tests {
         scenario.end();
     }
 
-    #[test, expected_failure(abort_code = ::sui::package::EAlreadyAuthorized)]
+    #[test, expected_failure(abort_code = ::haneul::package::EAlreadyAuthorized)]
     fun authorize_upgrade__should_fail_if_upgrade_cap_has_authorized_an_upgrade () {
         let mut scenario = setup_with_shared_upgrade_service();
 
@@ -318,7 +318,7 @@ module sui_extensions::upgrade_service_tests {
         scenario.end();
     }
 
-    #[test, expected_failure(abort_code = ::sui::package::ETooPermissive)]
+    #[test, expected_failure(abort_code = ::haneul::package::ETooPermissive)]
     fun authorize_upgrade__should_fail_if_upgrade_is_too_permissive () {
         let mut scenario = setup_with_shared_upgrade_service();
 
@@ -414,7 +414,7 @@ module sui_extensions::upgrade_service_tests {
         scenario.end();
     }
 
-    #[test, expected_failure(abort_code = ::sui::package::EWrongUpgradeCap)]
+    #[test, expected_failure(abort_code = ::haneul::package::EWrongUpgradeCap)]
     fun commit_upgrade__should_fail_if_upgrade_cap_and_receipt_are_mismatched () {
         let mut scenario = setup_with_shared_upgrade_service();
 

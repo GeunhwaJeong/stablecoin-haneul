@@ -16,7 +16,7 @@
 
 #[test_only]
 module stablecoin::mint_allowance_tests {
-    use sui::test_utils::{assert_eq};
+    use haneul::test_utils::{assert_eq};
     use stablecoin::mint_allowance;
 
     public struct MINT_ALLOWANCE_TESTS has drop {}

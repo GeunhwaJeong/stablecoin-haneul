@@ -18,7 +18,7 @@ module stablecoin::treasury {
     use std::string;
     use std::ascii;
     use std::u64::{min, max};
-    use sui::{
+    use haneul::{
         coin::{
             Self, Coin, CoinMetadata, DenyCapV2, TreasuryCap, 
 

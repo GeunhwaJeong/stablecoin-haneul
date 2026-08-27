@@ -17,7 +17,7 @@
 #[test_only]
 module usdc::usdc_tests {
     use std::{string, ascii};
-    use sui::{
+    use haneul::{
         test_scenario, 
         test_utils::{assert_eq},
         coin::{Self, CoinMetadata, RegulatedCoinMetadata},

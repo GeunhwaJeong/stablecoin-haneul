@@ -16,8 +16,8 @@
 
 module usdc::usdc {
     use std::ascii::string;
-    use sui::coin;
-    use sui::url;
+    use haneul::coin;
+    use haneul::url;
     use stablecoin::treasury;
     use sui_extensions::upgrade_service;
 

@@ -16,7 +16,7 @@
 
 #[test_only]
 module stablecoin::stablecoin_tests {
-    use sui::{
+    use haneul::{
         test_scenario,
         test_utils::{assert_eq}
     };

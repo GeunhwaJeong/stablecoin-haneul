@@ -25,7 +25,7 @@
 /// Inspired by OpenZeppelin's Ownable2Step in Solidity: 
 /// https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable2Step.sol.
 module sui_extensions::two_step_role {
-    use sui::event;
+    use haneul::event;
 
     // === Errors ===
 

@@ -15,7 +15,7 @@
 // limitations under the License.
 
 module stablecoin::version_control {
-    use sui::vec_set::VecSet;
+    use haneul::vec_set::VecSet;
 
     /// The current version of the package.
     const VERSION: u64 = 1;

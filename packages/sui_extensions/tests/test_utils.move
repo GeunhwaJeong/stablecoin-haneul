@@ -16,8 +16,8 @@
 
 #[test_only]
 module sui_extensions::test_utils {
-    use sui::event;
-    use sui::test_utils::assert_eq;
+    use haneul::event;
+    use haneul::test_utils::assert_eq;
 
     public fun last_event_by_type<T: copy + drop>(): T {
         let events_by_type = event::events_by_type();
